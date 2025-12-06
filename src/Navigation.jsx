@@ -14,8 +14,8 @@ function Navigation () {
 
 	function handleToggleIcon (name) {
 		const newNavs = navs.map(nav => {
-			if (nav.name === name) return { ...nav, isActive: !nav.isActive };
-			return { ...nav};
+			if (nav.name === name) return { ...nav, isActive: true };
+			return { ...nav, isActive: false};
 		});
 
 		setNavs(newNavs);
