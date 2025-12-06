@@ -15,7 +15,7 @@ function Navigation () {
 	function handleToggleIcon (name) {
 		const newNavs = navs.map(nav => {
 			if (nav.name === name) return { ...nav, isActive: !nav.isActive };
-			return { ...nav };
+			return { ...nav};
 		});
 
 		setNavs(newNavs);
@@ -37,7 +37,7 @@ function Nav ({ name, Icon, isActive, toggleIcon }) {
 		<li className="" onClick={() => toggleIcon(name)}>
 			<a href="#">
 				<Icon
-					weight={isActive ? "fill" : ""}
+					weight={isActive ? "fill" : "regular"}
 					size="1.5rem"
 					color="currentColor"
 					/>
