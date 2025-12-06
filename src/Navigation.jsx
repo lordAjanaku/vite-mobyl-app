@@ -3,31 +3,44 @@ import * as Icons from "@phosphor-icons/react"
 
 const navObject = [
 	{ name: "Home", icon: "House", isActive: false },
-	{ name: "Search", icon: "MagnifyingGlass", isActive: false },
-	{ name: "Profile", icon: "User", isActive: false },
-	{ name: "Settings", icon: "Gear", isActive: false },
-	{ name: "Help", icon: "Question", isActive: false },
+	{ name: "Map", icon: "MapTrifold", isActive: false },
+	{ name: "Transfer", icon: "ArrowsLeftRight", isActive: false },
+	{ name: "Settings", icon: "GearSix", isActive: false },
+	{ name: "Profile", icon: "UserCircle", isActive: false },
 ]
 
 function Navigation () {
-	const [navs, setNavs] = useState(navObject)
+	const [navs, setNavs] = useState(navObject);
+
+	function handleToggleIcon (name) {
+		const newNavs = navs.map(nav => {
+			if (nav.name === name) return { ...nav, isActive: !nav.isActive };
+			return { ...nav };
+		});
+
+		setNavs(newNavs);
+	}
 
 	return (
 		<ul className="outline">
 			{navs.map(nav => {
 				const Icon = Icons[nav.icon];
 
-				return <Nav key={nav.name} name={nav.name} Icon={Icon} isActive={nav.isActive} setNavs={setNavs} />;
+				return <Nav key={nav.name} name={nav.name} Icon={Icon} isActive={nav.isActive} toggleIcon={handleToggleIcon} />;
 			})}
 		</ul>
 	)
 }
 
-function Nav ({ name, Icon, isActive, setNavs }) {
+function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className="">
+		<li className="" onClick={() => toggleIcon(name)}>
 			<a href="#">
-				<Icon weight="regular" size="1.5rem" color="currentColor" />
+				<Icon
+					weight={isActive ? "fill" : ""}
+					size="1.5rem"
+					color="currentColor"
+					/>
 				<span>{name}</span>
 			</a>
 		</li>
