@@ -34,11 +34,15 @@ function Navigation () {
 
 function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className="" onClick={() => toggleIcon(name)}>
+		<li className=""
+			onClick={(e) => {
+				e.preventDefault();
+				toggleIcon(name)
+			} >
 			<a href="#">
 				<Icon
 					weight={isActive ? "fill" : "regular"}
-					size="1.5rem"
+					size="1rem"
 					color="currentColor"
 					/>
 				<span>{name}</span>
