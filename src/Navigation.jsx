@@ -24,10 +24,10 @@ function Navigation () {
 	return (
 		<ul className="outline grid grid-cols-5 items-center gap-2">
 			{navs.map(nav => {
-				const Icon = Icons[nav.icon];
+			const Icon = Icons[nav.icon];
 
-				return <Nav key={nav.name}name={nav.name} Icon={Icon} isActive={nav.isActive} toggleIcon={handleToggleIcon} />;
-			})}
+			return <Nav key={nav.name}name={nav.name} Icon={Icon} isActive={nav.isActive} toggleIcon={handleToggleIcon} />;
+		})}
 		</ul>
 	)
 }
