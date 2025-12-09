@@ -34,7 +34,7 @@ function Navigation () {
 
 function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className={`${isActive ? "text-gray-300" : "text-gray-900"}}`
+		<li className={`${isActive ? "text-gray-300" : "text-gray-900"}`}
 			onClick={(e) => {
 				e.preventDefault();
 				toggleIcon(name);
