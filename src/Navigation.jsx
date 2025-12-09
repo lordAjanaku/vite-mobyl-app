@@ -22,7 +22,7 @@ function Navigation () {
 	}
 
 	return (
-		<ul className="grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-lg shadow-lg" >
+		<ul className="grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-lg shadow-[0_-8px_25px_rgba(0,0,0,0.07)]" >
 			{navs.map(nav => {
 			const Icon = Icons[nav.icon];
 
@@ -34,12 +34,12 @@ function Navigation () {
 
 function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className="py-4 px-6 grid justify-center"
+		<li className="py-4 px-6"
 			onClick={(e) => {
 				e.preventDefault();
 				toggleIcon(name);
 			}} >
-			<a href="#">
+			<a className="grid justify-center" href="#">
 				<Icon
 					weight={isActive ? "fill" : "regular"}
 					size="1.5rem"
