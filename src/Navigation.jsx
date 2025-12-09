@@ -41,7 +41,7 @@ function Nav({ name, Icon, isActive, toggleIcon }) {
           e.preventDefault();
           toggleIcon(name);
         }}
-        className={`flex flex-col items-center justify-center py-8 px-6 ${
+        className={`flex flex-col items-center justify-center py-8 px-6 text-gray-300 ${
           isActive ? "text-gray-900" : ""
         }`}
       >
