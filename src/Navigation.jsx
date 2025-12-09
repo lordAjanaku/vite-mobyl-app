@@ -22,7 +22,7 @@ function Navigation () {
 	}
 
 	return (
-		<ul className="outline grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0" >
+		<ul className="grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-lg shadow-lg" >
 			{navs.map(nav => {
 			const Icon = Icons[nav.icon];
 
@@ -34,7 +34,7 @@ function Navigation () {
 
 function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className="outline outline-red p-4 grid items-center"
+		<li className="py-4 px-6 grid justify-center"
 			onClick={(e) => {
 				e.preventDefault();
 				toggleIcon(name);
