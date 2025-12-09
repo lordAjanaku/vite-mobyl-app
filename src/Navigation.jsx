@@ -22,7 +22,7 @@ function Navigation () {
 	}
 
 	return (
-		<ul className="grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-lg shadow-[0_-8px_25px_rgba(0,0,0,0.07)]" >
+		<ul className="grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-[5rem] shadow-[0_-8px_25px_rgba(0,0,0,0.07)]" >
 			{navs.map(nav => {
 			const Icon = Icons[nav.icon];
 
@@ -34,7 +34,7 @@ function Navigation () {
 
 function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className=""
+		<li className={`${isActive ? "text-gray-300" : "text-gray-900"}}`
 			onClick={(e) => {
 				e.preventDefault();
 				toggleIcon(name);
