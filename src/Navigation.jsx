@@ -34,12 +34,12 @@ function Navigation () {
 
 function Nav ({ name, Icon, isActive, toggleIcon }) {	
 	return (
-		<li className="py-4 px-6"
+		<li className=""
 			onClick={(e) => {
 				e.preventDefault();
 				toggleIcon(name);
 			}} >
-			<a className="grid justify-center" href="#">
+			<a className="flex flex-col justify-center items-center py-8 px-6" href="#">
 				<Icon
 					weight={isActive ? "fill" : "regular"}
 					size="1.5rem"
