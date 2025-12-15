@@ -6,10 +6,10 @@ function Home() {
 		<>
 			<header className="flex items-center justify-between">
 				<div className="">
-					<h1 className="text-2xl font-bold">Good morning, Terry</h1>
+					<h1 className="text-xl font-bold">Good morning, Terry</h1>
 					<p className="text-lg text-gray-500">Welcome to Neobank</p>
 				</div>
-				<button className="border border-gray-500 rounded-md p-2" type="button">
+				<button className="border-2 border-gray-500 rounded-md p-2" type="button">
 					<Bell size={24} weight="light" />
 				</button>
 			</header>
