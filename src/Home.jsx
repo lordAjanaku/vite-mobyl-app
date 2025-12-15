@@ -17,7 +17,7 @@ function Home() {
 			<main className="">
 				<BankBalance />
 			</main>
-		</>
+		</div>
 	)
 }
 
