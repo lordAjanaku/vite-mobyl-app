@@ -31,7 +31,7 @@ function BankBalance() {
 					<EyeSlash size={24} weight="regular" />
 				</button>
 			</div>
-			<button className="bg-neutral-950 text-white font-semibold w-full p-4 rounded-xl" type="button">Add money</button>
+			<button className="bg-black text-white font-semibold w-full p-4 rounded-xl" type="button">Add money</button>
 		</div>
 	)
 }
