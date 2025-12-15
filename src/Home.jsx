@@ -4,14 +4,14 @@ import { Eye, EyeSlash, Bell } from "@phosphor-icons/react";
 function Home() {
 	return (
 		<>
-			<header>
-				<div className="flex items-center justify-between">
+			<header className="flex items-center justify-between">
+				<div className="">
 					<h1 className="text-2xl font-bold">Good morning, Terry</h1>
 					<p className="text-lg text-gray-500">Welcome to Neobank</p>
 				</div>
-				<div className="border border-gray-500 rounded-md p-2">
+				<button className="border border-gray-500 rounded-md p-2" type="button">
 					<Bell size={24} weight="light" />
-				</div>
+				</button>
 			</header>
 
 			<main className="">
