@@ -56,23 +56,5 @@ function Nav({ name, Icon, isActive, toggleIcon }) {
   );
 }
 
-/* function Nav ({ name, Icon, isActive, toggleIcon }) {	
-	return (
-		<li className={`${isActive ? "text-gray-300" : "text-gray-900"}`}
-			onClick={(e) => {
-				e.preventDefault();
-				toggleIcon(name);
-			}} >
-			<a className="flex flex-col justify-center items-center py-8 px-6" href="#">
-				<Icon
-					weight={isActive ? "fill" : "regular"}
-					size="1.5rem"
-					color="currentColor"
-					/>
-				<span>{name}</span>
-			</a>
-		</li>
-	)
-} */
-
 export default Navigation;
+
