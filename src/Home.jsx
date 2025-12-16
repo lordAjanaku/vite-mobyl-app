@@ -6,7 +6,7 @@ function Home() {
 		<div className="">
 			<header className="flex items-center justify-between">
 				<div className="">
-					<h1 className="text-2xl font-bold text-neutral-950">Good morning, Terry</h1>
+					<h1 className="text-2xl font-bold text-neutral-950 tracking-tight">Good morning, Terry</h1>
 					<p className="text-lg text-gray-500">Welcome to Neobank</p>
 				</div>
 				<button className="border border-gray-300 rounded-md p-3" type="button">
@@ -44,5 +44,17 @@ function BankBalance() {
 		</div>
 	)
 }
+
+
+/* function Card() {
+	return (
+		<div className="">
+			<div className="">
+			
+			</div>
+			
+		</div>
+	)
+} */
 
 export default Home;
