@@ -4,7 +4,6 @@
 
 @theme {
   --font-family-sans: 'Poppins', sans-serif;
-	--brand-500: theme(colors.brand.500);
 }
 
 :root {
