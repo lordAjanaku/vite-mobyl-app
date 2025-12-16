@@ -10,7 +10,7 @@ function Home() {
 					<p className="text-lg text-gray-500">Welcome to Neobank</p>
 				</div>
 				<button className="border border-gray-500 rounded-md p-2" type="button">
-					<Bell size={24} weight="regular" />
+					<Bell className="text-red-500" size={24} weight="regular" color="currentColor"/>
 				</button>
 			</header>
 
@@ -28,7 +28,7 @@ function BankBalance() {
 			<div className="flex items-center justify-between mb-4">
 				<p className="text-4xl text-neutral-950 font-bold">$3,200.00</p>
 				<button className="" type="button">
-					<EyeSlash className="text-neutral-950 bg-neutral-950" size={24} weight="regular" color="currentColor"/>
+					<EyeSlash className="text-neutral-950" size={24} weight="regular" color="currentColor"/>
 				</button>
 			</div>
 			<button className="bg-black text-white font-semibold w-full p-4 rounded-[15rem]" type="button">Add money</button>
