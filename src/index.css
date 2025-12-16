@@ -4,6 +4,7 @@
 
 @theme {
   --font-family-sans: 'Poppins', sans-serif;
+	--brand-500: theme(colors.brand.500);
 }
 
 :root {
@@ -19,4 +20,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: var(--color-slate-200)
 }
