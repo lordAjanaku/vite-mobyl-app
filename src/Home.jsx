@@ -26,7 +26,7 @@ function BankBalance() {
 		<div className="bg-white p-4">
 			<p className="text-gray-500">Your balance</p>
 			<div className="flex items-center justify-between mb-2">
-				<p className="text-4xl text-neutal-950 font-bold">$3,200.00</p>
+				<p className="text-4xl text-neutral-950 font-bold">$3,200.00</p>
 				<button className="" type="button">
 					<EyeSlash size={24} weight="regular" />
 				</button>

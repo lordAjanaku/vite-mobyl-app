@@ -22,7 +22,7 @@ function Navigation () {
 	}
 
 	return (
-		<ul className="grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-[3rem] shadow-[0_-8px_25px_rgba(0,0,0,0.07)]" >
+		<ul className="bg-white grid grid-cols-5 items-center gap-2 text-sm fixed bottom-0 rounded-t-[3rem] shadow-[0_-8px_25px_rgba(0,0,0,0.07)]" >
 			{navs.map(nav => {
 			const Icon = Icons[nav.icon];
 

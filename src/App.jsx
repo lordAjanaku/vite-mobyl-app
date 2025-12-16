@@ -4,7 +4,7 @@ import Home from "./Home.jsx"
 
 function App() {
 	return (
-		<div className="">
+		<div className="bg-slate-100">
 			<Home />
 			<Navigation />
 		</div>
