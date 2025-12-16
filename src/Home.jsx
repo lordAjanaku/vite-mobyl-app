@@ -22,7 +22,7 @@ function Home() {
 }
 
 function BankBalance() {
-	const [viewBalance, setViewBalance] = useState(false);
+	const [viewBalance, setViewBalance] = useState(true);
 
 	function handleViewBalance() {
 		if (viewBalance) setViewBalance(false);
@@ -31,12 +31,12 @@ function BankBalance() {
 
 	return (
 		<div className="bg-white p-6 my-6 rounded-[1.5rem]">
-			<p className="text-gray-500">Your balance</p>
-			<div className="flex items-center justify-between mb-4">
-				<p className="text-4xl text-neutral-950 font-bold">{viewBalance ? "$3,200.00" : "____"}</p>
+			<p className="text-gray-500 mb-2">Your balance</p>
+			<div className="flex items-center justify-between mb-6">
+				<p className="text-4xl text-neutral-950 font-bold">{viewBalance ? "$3,200.00" : "****"}</p>
 				<button className="" type="button" onClick={() => handleViewBalance()}>
 					{
-						viewBalance ? <EyeSlash className="text-neutral-950" size={24} weight="regular" color="currentColor"/> : <Eye className="text-neutral-950" size={24} weight="regular" color="currentColor"/>
+						viewBalance ? <Eye className="text-neutral-950" size={24} weight="regular" color="currentColor"/> : <EyeSlash className="text-neutral-950" size={24} weight="regular" color="currentColor"/>
 					}
 				</button>
 			</div>
