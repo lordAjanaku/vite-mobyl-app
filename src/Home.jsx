@@ -23,7 +23,7 @@ function Home() {
 
 function BankBalance() {
 	return (
-		<div className="bg-white p-6 my-6 rounded-[3rem]">
+		<div className="bg-white p-6 my-6 rounded-[2rem]">
 			<p className="text-gray-500">Your balance</p>
 			<div className="flex items-center justify-between mb-4">
 				<p className="text-4xl text-neutral-950 font-bold">$3,200.00</p>
