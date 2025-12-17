@@ -18,12 +18,8 @@ function Home() {
 
 			<main className="">
 				<BankBalance />
-<<<<<<< HEAD
-				<MastercardLogo />
 				<Logo />
-=======
 				<Card />
->>>>>>> 529699c (udatea made)
 			</main>
 		</div>
 	)
@@ -59,6 +55,7 @@ function Card() {
 		<div className="">
 			<div className="">
 				<Logo className="w-12"/>
+				<MastercardLogo />
 			</div>
 			<div className="">
 				<div className="">
