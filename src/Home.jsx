@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Eye, EyeSlash, Bell } from "@phosphor-icons/react";
 import Logo from './assets/logo.svg?react'
+import MastercardLogo from './assets/mastercard.svg?react'
 
 function Home() {
 	return (
@@ -17,6 +18,7 @@ function Home() {
 
 			<main className="">
 				<BankBalance />
+				<MastercardLogo />
 				<Logo />
 			</main>
 		</div>
