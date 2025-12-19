@@ -61,7 +61,7 @@ function Card() {
 					<p className="">Debit Card</p>
 					<p className="">****4548</p>
 				</div>
-				<button className="flex items-center gap-3 bg-white" type="button">
+				<button className="flex items-center gap-3 bg-white py-2 px-4" type="button">
 					<Eye className="" size={24} weigh="regular" color="currentColor" />
 					<p classmate="">Details</p>
 				</button>
