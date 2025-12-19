@@ -51,7 +51,7 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="p-4 bg-lime-400 text-black">
+		<div className="p-4 bg-lime-400 text-black outline outline-red-500">
 			<div className="flex items-center justify-betwen">
 				<Logo className="w-30 aspect-square"/>
 				<MastercardLogo className="w-15"/>
