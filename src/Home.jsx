@@ -18,7 +18,6 @@ function Home() {
 
 			<main className="">
 				<BankBalance />
-				<Logo />
 				<Card />
 			</main>
 		</div>
