@@ -53,7 +53,7 @@ function Card() {
 	return (
 		<div className="p-4 bg-lime-400 text-black outline outline-red-500">
 			<div className="flex items-center justify-betwen">
-				<Logo className="w-30 aspect-square"/>
+				<Logo className="w-30 h-30"/>
 				<MastercardLogo className="w-15"/>
 			</div>
 			<div className="">
