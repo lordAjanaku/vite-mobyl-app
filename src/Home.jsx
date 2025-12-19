@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Eye, EyeSlash, Bell } from "@phosphor-icons/react";
+import { Eye, EyeSlash, Bell, Plus } from "@phosphor-icons/react";
 import Logo from './assets/logo.svg?react'
 import MastercardLogo from './assets/mastercard.svg?react'
 
@@ -51,18 +51,18 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="grid gap-8 p-4 bg-lime-400 text-black rounded-[1.5rem] outline outline-red-500">
-			<div className="flex items-center justify-between outline">
-				<Logo className="w-15 h-15"/>
+		<div className="grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
+			<div className="flex items-center justify-between">
+				<Logo className="w-10 h-10"/>
 				<MastercardLogo className="w-15"/>
 			</div>
 			
-			<div className="flex items-center justify-between outline">
+			<div className="flex items-center justify-between">
 				<div className="">
 					<p className="">Debit Card</p>
 					<p className="">****4548</p>
 				</div>
-				<button className="flex items-center gap-3 bg-white py-2 px-4 rounded-sm" type="button">
+				<button className="flex items-center gap-3 bg-white py-2 px-4 rounded-[1.5rem]" type="button">
 					<Eye className="" size={24} weigh="regular" color="currentColor" />
 					<p classmate="">Details</p>
 				</button>
