@@ -53,8 +53,8 @@ function Card() {
 	return (
 		<div className="">
 			<div className="">
-				<Logo className="w-12"/>
-				<MastercardLogo />
+				<Logo className="w-20"/>
+				<MastercardLogo className="w-20"/>
 			</div>
 			<div className="">
 				<div className="">
