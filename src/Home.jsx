@@ -18,7 +18,7 @@ function Home() {
 
 			<main className="">
 				<BankBalance />
-				<Card />
+				<CardList />
 			</main>
 		</div>
 	)
