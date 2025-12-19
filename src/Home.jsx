@@ -18,8 +18,12 @@ function Home() {
 
 			<main className="">
 				<BankBalance />
+<<<<<<< HEAD
 				<MastercardLogo />
 				<Logo />
+=======
+				<Card />
+>>>>>>> 529699c (udatea made)
 			</main>
 		</div>
 	)
@@ -50,15 +54,24 @@ function BankBalance() {
 }
 
 
-/* function Card() {
+function Card() {
 	return (
 		<div className="">
 			<div className="">
-			
+				<Logo className="w-12"/>
 			</div>
-			
+			<div className="">
+				<div className="">
+					<p className="">Debit Card</p>
+					<p className="">****4548</p>
+				</div>
+				<button className="" type="button">
+					<Eye className="" size={24} weigh="regular" color="currentColor" />
+					<p classmate="">Details</p>
+				</button>
+			</div>
 		</div>
 	)
-} */
+}
 
 export default Home;
