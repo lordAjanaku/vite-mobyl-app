@@ -18,7 +18,7 @@ function Home() {
 
 			<main className="">
 				<BankBalance />
-				<Card/>
+				<CardList/>
 			</main>
 		</div>
 	)
@@ -54,7 +54,7 @@ function Card() {
 		<div className="grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
 			<div className="flex items-center justify-between">
 				<Logo className="w-10 h-10"/>
-				<MastercardLogo className="w-15"/>
+				<MastercardLogo className="w-10"/>
 			</div>
 			
 			<div className="flex items-center justify-between">
