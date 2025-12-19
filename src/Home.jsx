@@ -39,7 +39,7 @@ function BankBalance() {
 				<p className="text-4xl text-neutral-950 font-bold">{viewBalance ? "$3,200.00" : "****"}</p>
 				<button className="" type="button" onClick={() => handleViewBalance()}>
 					{
-						viewBalance ? <Eye className="text-neutral-950" size={24} weight="regular" color="currentColor"/> : <EyeSlash className="text-neutral-950" size={24} weight="regular" color="currentColor"/>
+					viewBalance ? <Eye className="text-neutral-950" size={24} weight="regular" color="currentColor"/> : <EyeSlash className="text-neutral-950" size={24} weight="regular" color="currentColor"/>
 					}
 				</button>
 			</div>
@@ -51,9 +51,9 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="p-6">
+		<div className="p-4 bg-lime-400 text-black">
 			<div className="flex items-center justify-betwen">
-				<Logo className="w-20 aspect-square"/>
+				<Logo className="w-30 aspect-square"/>
 				<MastercardLogo className="w-15"/>
 			</div>
 			<div className="">
@@ -61,10 +61,29 @@ function Card() {
 					<p className="">Debit Card</p>
 					<p className="">****4548</p>
 				</div>
-				<button className="" type="button">
+				<button className="flex items-center gap-3 bg-white" type="button">
 					<Eye className="" size={24} weigh="regular" color="currentColor" />
 					<p classmate="">Details</p>
 				</button>
+			</div>
+		</div>
+	)
+}
+
+function CardList () {
+	return (
+		<div className="">
+			<div className="flex items-center justify-betwen mb-6">
+				<p>Your cards</p>
+				<p>
+					<Plus className="m-2" weight="regular"/>
+					<span>New card</span>
+				</p>
+			</div>
+
+			<div className="flex flex-col items-center gap-4">
+				<Card />
+				<Card />
 			</div>
 		</div>
 	)
