@@ -51,18 +51,18 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="grid p-4 bg-lime-400 text-black outline outline-red-500">
+		<div className="grid gap-8 p-4 bg-lime-400 text-black rounded-[1.5rem] outline outline-red-500">
 			<div className="flex items-center justify-between outline">
-				<Logo className="w-20 h-20"/>
+				<Logo className="w-15 h-15"/>
 				<MastercardLogo className="w-15"/>
 			</div>
 			
-			<div className="flex items-center justify-between mt-auto outline">
+			<div className="flex items-center justify-between outline">
 				<div className="">
 					<p className="">Debit Card</p>
 					<p className="">****4548</p>
 				</div>
-				<button className="flex items-center gap-3 bg-white py-2 px-4" type="button">
+				<button className="flex items-center gap-3 bg-white py-2 px-4 rounded-sm" type="button">
 					<Eye className="" size={24} weigh="regular" color="currentColor" />
 					<p classmate="">Details</p>
 				</button>
