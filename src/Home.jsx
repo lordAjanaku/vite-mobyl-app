@@ -82,7 +82,7 @@ function CardList () {
 				</p>
 			</div>
 
-			<div className="grid grid-flow-col gap-4">
+			<div className="grid grid-flow-col gap-4 overflow-auto">
 				<Card />
 				<Card />
 			</div>
