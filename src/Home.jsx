@@ -51,12 +51,13 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="p-4 bg-lime-400 text-black outline outline-red-500">
-			<div className="flex items-center justify-betwen">
-				<Logo className="w-30 h-30"/>
+		<div className="grid p-4 bg-lime-400 text-black outline outline-red-500">
+			<div className="flex items-center justify-between outline">
+				<Logo className="w-20 h-20"/>
 				<MastercardLogo className="w-15"/>
 			</div>
-			<div className="">
+			
+			<div className="flex items-center justify-between mt-auto outline">
 				<div className="">
 					<p className="">Debit Card</p>
 					<p className="">****4548</p>
@@ -73,7 +74,7 @@ function Card() {
 function CardList () {
 	return (
 		<div className="">
-			<div className="flex items-center justify-betwen mb-6">
+			<div className="flex items-center justify-between mb-6">
 				<p>Your cards</p>
 				<p>
 					<Plus className="m-2" weight="regular"/>
