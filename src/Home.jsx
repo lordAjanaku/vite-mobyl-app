@@ -17,7 +17,6 @@ function Home() {
 			</header>
 
 			<BankBalance />
-			<CardList />
 		</div>
 	)
 }
