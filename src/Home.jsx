@@ -5,18 +5,20 @@ import MastercardLogo from './assets/mastercard.svg?react'
 
 function Home() {
 	return (
-		<div className="grid-layout">
-			<header className="flex items-center justify-between grid-content">
-				<div className="">
-					<h1 className="text-2xl font-bold text-neutral-950 tracking-tight">Good morning, Terry</h1>
-					<p className="text-lg text-gray-500">Welcome to Neobank</p>
+		<div className="">
+			<header className="grid-layout">
+				<div className="flex items-center justify-between grid-content">
+					<div className="">
+						<h1 className="text-2xl font-bold text-neutral-950 tracking-tight">Good morning, Terry</h1>
+						<p className="text-lg text-gray-500">Welcome to Neobank</p>
+					</div>
+					<button className="border border-gray-300 rounded-md p-3" type="button">
+						<Bell className="text-black" size={24} weight="regular" color="currentColor"/>
+					</button>
 				</div>
-				<button className="border border-gray-300 rounded-md p-3" type="button">
-					<Bell className="text-black" size={24} weight="regular" color="currentColor"/>
-				</button>
 			</header>
 
-			<main className="grid-full-bleed grid-layout">
+			<main className="grid-layout">
 				<BankBalance className="grid-content"/>
 				<CardList className="grid-full-bleed"/>
 			</main>
@@ -56,7 +58,7 @@ function Card() {
 				<Logo className="w-10 h-10"/>
 				<MastercardLogo className="w-10"/>
 			</div>
-			
+
 			<div className="flex items-center justify-between">
 				<div className="">
 					<p className="">Debit Card</p>
