@@ -5,8 +5,8 @@ import MastercardLogo from './assets/mastercard.svg?react'
 
 function Home() {
 	return (
-		<div className="grid grid-cols-[minmax(1.5rem,1fr)_minmax(0,24.375rem)_minmax(1.5rem,1fr)]">
-			<header className="flex items-center justify-between col-span-full">
+		<div className="grid-layout">
+			<header className="flex items-center justify-between grid-content">
 				<div className="">
 					<h1 className="text-2xl font-bold text-neutral-950 tracking-tight">Good morning, Terry</h1>
 					<p className="text-lg text-gray-500">Welcome to Neobank</p>

@@ -22,5 +22,21 @@
 }
 
 body {
-	background-color: var(--color-slate-200)
+	background-color: var(--color-slate-200);
+}
+
+/* Add to src/index.css */
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 22.875rem) 1.5rem;
+  margin: 0 auto;
+}
+
+.grid-full-bleed {
+  grid-column: 1 / -1;
+}
+
+.grid-content {
+  grid-column: 2 / 3;
 }
