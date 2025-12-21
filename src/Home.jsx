@@ -16,8 +16,8 @@ function Home() {
 				</button>
 			</header>
 
-			<BankBalance className="grid-content"/>
-			<CardList className="grid-content "/>
+			<BankBalance />
+			<CardList />
 		</div>
 	)
 }
@@ -31,7 +31,7 @@ function BankBalance() {
 	}
 
 	return (
-		<div className="bg-white p-6 my-6 rounded-[1.5rem]">
+		<div className="grid-content bg-white p-6 my-6 rounded-[1.5rem]">
 			<p className="text-gray-500 mb-2">Your balance</p>
 			<div className="flex items-center justify-between mb-6">
 				<p className="text-4xl text-neutral-950 font-bold">{viewBalance ? "$3,200.00" : "****"}</p>
@@ -71,7 +71,7 @@ function Card() {
 
 function CardList () {
 	return (
-		<div className="outline outline-red">
+		<div className="grid-full-bleed outline outline-red">
 			<div className="flex items-center justify-between mb-6">
 				<p>Your cards</p>
 				<p>
