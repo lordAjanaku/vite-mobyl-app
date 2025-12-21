@@ -74,7 +74,7 @@ function Card() {
 function CardList () {
 	return (
 		<div className="">
-			<div className="flex items-center justify-between mb-6">
+			<div className="flex items-center justify-between mb-6 mx--6">
 				<p>Your cards</p>
 				<p>
 					<Plus className="m-2" weight="regular"/>
