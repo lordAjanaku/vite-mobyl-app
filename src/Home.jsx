@@ -17,7 +17,7 @@ function Home() {
 			</header>
 
 			<BankBalance className="grid-content"/>
-			<CardList className="grid-full-bleed"/>
+			<CardList className="grid-content "/>
 		</div>
 	)
 }
