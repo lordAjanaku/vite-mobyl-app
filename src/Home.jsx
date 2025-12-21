@@ -71,8 +71,8 @@ function Card() {
 
 function CardList () {
 	return (
-		<div className="grid-full-bleed text-neutral-950 outline outline-red">
-			<div className="flex items-center justify-between px-6 mb-6">
+		<div className="grid-full-bleed text-neutral-950">
+			<div className="flex items-center justify-between px-6 mb-6 font-semibold text-lg">
 				<p>Your cards</p>
 				<p className="flex items-center justify-between gap-2">
 					<Plus className="m-2" weight="regular"/>
@@ -80,7 +80,7 @@ function CardList () {
 				</p>
 			</div>
 
-			<div className="grid grid-flow-col gap-4 overflow-auto">
+			<div className="grid grid-flow-col grid-cols-[1fr] gap-4 overflow-auto">
 				<Card />
 				<Card />
 			</div>
