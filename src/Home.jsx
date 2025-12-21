@@ -15,8 +15,9 @@ function Home() {
 					<Bell className="text-black" size={24} weight="regular" color="currentColor"/>
 				</button>
 			</header>
-
+			
 			<BankBalance />
+			<CardList />
 		</div>
 	)
 }
