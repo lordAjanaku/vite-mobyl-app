@@ -18,9 +18,9 @@ function Home() {
 				</div>
 			</header>
 
-			<main className="grid-layout">
+			<main className="grid-layout outline outline-red-500">
 				<BankBalance className="grid-content"/>
-				<CardList className="grid-full-bleed"/>
+				<CardList className="text-neutral-950 grid-full-bleed"/>
 			</main>
 		</div>
 	)
