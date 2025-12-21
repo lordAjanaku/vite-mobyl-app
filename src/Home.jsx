@@ -16,9 +16,9 @@ function Home() {
 				</button>
 			</header>
 
-			<main className="col-span-full grid-cols-[minmax(1.5rem,1fr)_minmax(0,24.375rem)_minmax(1.5rem,1fr)]">
-				<BankBalance className="col-span-[2/3]"/>
-				<CardList className="col-span-full"/>
+			<main className="grid-full-bleed grid-layout">
+				<BankBalance className="grid-content"/>
+				<CardList className="grid-full-bleed"/>
 			</main>
 		</div>
 	)
