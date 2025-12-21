@@ -29,7 +29,7 @@ body {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: 1.5rem 22.875rem 1.5rem;
+  grid-template-columns: 1fr min(calc(100% - 3rem), 22rem) 1fr;
   margin: 0 auto;
 }
 
