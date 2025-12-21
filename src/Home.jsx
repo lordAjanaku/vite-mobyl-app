@@ -85,7 +85,7 @@ function CardList () {
 				<Card />
 			</div>
 		</div>
-	)i
+	)
 }
 
 export default Home;
