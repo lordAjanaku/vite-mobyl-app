@@ -19,8 +19,8 @@ function Home() {
 			</header>
 
 			<main className="grid-layout outline outline-red-500">
-				<BankBalance className="grid-content"/>
-				<CardList className="text-neutral-950 grid-full-bleed"/>
+				<BankBalance className=""/>
+				<CardList className=""/>
 			</main>
 		</div>
 	)
@@ -35,7 +35,7 @@ function BankBalance() {
 	}
 
 	return (
-		<div className="bg-white p-6 my-6 rounded-[1.5rem]">
+		<div className="bg-white p-6 my-6 rounded-[1.5rem] grid-content">
 			<p className="text-gray-500 mb-2">Your balance</p>
 			<div className="flex items-center justify-between mb-6">
 				<p className="text-4xl text-neutral-950 font-bold">{viewBalance ? "$3,200.00" : "****"}</p>
@@ -53,7 +53,7 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
+		<div className="text-neutral-950 grid-full-bleed grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
 			<div className="flex items-center justify-between">
 				<Logo className="w-10 h-10"/>
 				<MastercardLogo className="w-10"/>
