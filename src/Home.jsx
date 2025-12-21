@@ -80,12 +80,12 @@ function CardList () {
 				</p>
 			</div>
 
-			<div className="grid grid-flow-col grid-cols-[1fr] gap-4 overflow-auto">
+			<div className="grid grid-flow-col grid-cols-[20rem] gap-4 overflow-auto scroll-smooth snap-x snap-mandatory">
 				<Card />
 				<Card />
 			</div>
 		</div>
-	)
+	)i
 }
 
 export default Home;
