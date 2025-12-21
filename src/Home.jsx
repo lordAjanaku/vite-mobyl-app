@@ -49,7 +49,7 @@ function BankBalance() {
 
 function Card() {
 	return (
-		<div className="text-neutral-950 grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
+		<div className="grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
 			<div className="flex items-center justify-between">
 				<Logo className="w-10 h-10"/>
 				<MastercardLogo className="w-10"/>
@@ -71,10 +71,10 @@ function Card() {
 
 function CardList () {
 	return (
-		<div className="grid-full-bleed outline outline-red">
-			<div className="flex items-center justify-between mb-6">
+		<div className="grid-full-bleed text-neutral-950 outline outline-red">
+			<div className="flex items-center justify-between px-6 mb-6">
 				<p>Your cards</p>
-				<p>
+				<p className="flex items-center justify-between gap-2">
 					<Plus className="m-2" weight="regular"/>
 					<span>New card</span>
 				</p>
