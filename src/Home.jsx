@@ -5,23 +5,19 @@ import MastercardLogo from './assets/mastercard.svg?react'
 
 function Home() {
 	return (
-		<div className="">
-			<header className="grid-layout">
-				<div className="flex items-center justify-between grid-content">
-					<div className="">
-						<h1 className="text-2xl font-bold text-neutral-950 tracking-tight">Good morning, Terry</h1>
-						<p className="text-lg text-gray-500">Welcome to Neobank</p>
-					</div>
-					<button className="border border-gray-300 rounded-md p-3" type="button">
-						<Bell className="text-black" size={24} weight="regular" color="currentColor"/>
-					</button>
+		<div className="grid-layout">
+			<header className="flex items-center justify-between grid-content">
+				<div className="">
+					<h1 className="text-2xl font-bold text-neutral-950 tracking-tight">Good morning, Terry</h1>
+					<p className="text-lg text-gray-500">Welcome to Neobank</p>
 				</div>
+				<button className="border border-gray-300 rounded-md p-3" type="button">
+					<Bell className="text-black" size={24} weight="regular" color="currentColor"/>
+				</button>
 			</header>
 
-			<main className="grid-layout outline outline-red-500">
-				<BankBalance className=""/>
-				<CardList className=""/>
-			</main>
+			<BankBalance className=""/>
+			<CardList className=""/>
 		</div>
 	)
 }
