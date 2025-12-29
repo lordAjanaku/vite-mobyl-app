@@ -81,8 +81,9 @@ function CardList () {
 			</div>
 
 			<div className="grid grid-flow-col auto-cols-[20rem] pl-6 gap-4 overflow-auto scrollbar-hide scroll-smooth snap-x snap-mandatory">
-				<Card />
-				<Card />
+			  <Card variant="lime" />
+			  <Card variant="dark" />
+			  <Card variant="light" />
 			</div>
 		</div>
 	)
