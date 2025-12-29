@@ -100,7 +100,7 @@ function Card({ variant = "lime" }) {
     <div className={`card ${variantClasses[variant]}`}>
       <div className="flex items-center justify-between">
         {/* The 'card-icon' utility passes the --card-fg variable down */}
-        <Logo className="card-icon stroke-current w-10 h-10"/>
+        <Logo className="card-icon w-10 h-10"/>
         <MastercardLogo className="card-icon w-10"/>
       </div>
 
