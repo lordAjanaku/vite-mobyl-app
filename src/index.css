@@ -4,22 +4,25 @@
 @plugin "tailwind-scrollbar-hide";
 
 @theme {
-  --font-family-sans: 'Space Mono', monospace;
+	--font-family-sans: 'Space Mono', monospace;
+	--color-card-lime: var(--color-lime-400);
+	--color-card-dark: var(--color-zinc-900);
+	--color-card-light: var(--color-white);
 }
 
 :root {
-  font-family: var(--font-family-sans);
-  line-height: 1.5;
-  font-weight: 400;
+	font-family: var(--font-family-sans);
+	line-height: 1.5;
+	font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -29,15 +32,46 @@ body {
 /* Add to src/index.css */
 
 .grid-layout {
-  display: grid;
-  grid-template-columns: 1fr min(calc(100% - 3rem), 22rem) 1fr;
-  margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr min(calc(100% - 3rem), 22rem) 1fr;
+	margin: 0 auto;
 }
 
 .grid-full-bleed {
-  grid-column: 1 / 4;
+	grid-column: 1 / 4;
 }
 
 .grid-content {
-  grid-column: 2 / 3;
+	grid-column: 2 / 3;
+}
+
+/* card component */
+@utility card {
+	@apply grid gap-16 p-4 rounded-[1.5rem] transition-colors;
+
+	/* Default / Lime Variant */
+	background-color: var(--color-card-lime);
+	color: var(--color-black);
+
+	/* Dark Variant */
+	&.is-dark {
+		background-color: var(--color-card-dark);
+		color: var(--color-white);
+
+		/* Target the button inside the dark card */
+		& .card-button {
+			@apply bg-zinc-800 text-white;
+		}
+	}
+
+	/* Light Variant */
+	&.is-light {
+		background-color: var(--color-card-light);
+		color: var(--color-black);
+		border: 1px solid var(--color-zinc-200);
+	}
+}
+
+@utility card-button {
+	@apply flex items-center gap-3 bg-white py-2 px-4 rounded-[1.5rem] text-sm font-medium;
 }

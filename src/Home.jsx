@@ -47,7 +47,7 @@ function BankBalance() {
 }
 
 
-function Card() {
+/* function Card() {
 	return (
 		<div className="grid gap-16 p-4 bg-lime-400 text-black rounded-[1.5rem]">
 			<div className="flex items-center justify-between">
@@ -67,7 +67,7 @@ function Card() {
 			</div>
 		</div>
 	)
-}
+} */
 
 function CardList () {
 	return (
@@ -87,5 +87,36 @@ function CardList () {
 		</div>
 	)
 }
+
+function Card({ variant = "lime" }) {
+  // Map props to our CSS classes
+  const variantClasses = {
+    lime: "", // default
+    dark: "is-dark",
+    light: "is-light"
+  };
+
+  return (
+    <div className={`card ${variantClasses[variant]}`}>
+      <div className="flex items-center justify-between">
+        <Logo className="w-10 h-10"/>
+        <MastercardLogo className="w-10"/>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <div>
+          <p className="opacity-80 text-sm">Debit Card</p>
+          <p className="font-mono font-medium">**** 4548</p>
+        </div>
+        
+        <button className="card-button" type="button">
+          <Eye size={20} />
+          <span>Details</span>
+        </button>
+      </div>
+    </div>
+  );
+}
+
 
 export default Home;
