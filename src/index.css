@@ -47,31 +47,46 @@ body {
 
 /* card component */
 @utility card {
-	@apply grid gap-16 p-4 rounded-[1.5rem] transition-colors;
+  @apply grid gap-16 p-4 rounded-[1.5rem] transition-colors;
+  
+  /* 1. Set the variable defaults (Lime variant) */
+  --card-fg: var(--color-black);
+  --card-btn-bg: var(--color-white);
+  --card-btn-fg: var(--color-black);
+  
+  background-color: var(--color-lime-400);
+  color: var(--card-fg);
 
-	/* Default / Lime Variant */
-	background-color: var(--color-card-lime);
-	color: var(--color-black);
+  &.is-dark {
+    /* 2. Update variables for Dark variant */
+    --card-fg: var(--color-white);
+    --card-btn-bg: var(--color-zinc-800);
+    --card-btn-fg: var(--color-white);
+    
+    background-color: var(--color-zinc-900);
+    color: var(--card-fg);
+  }
 
-	/* Dark Variant */
-	&.is-dark {
-		background-color: var(--color-card-dark);
-		color: var(--color-white);
+  &.is-light {
+    /* 3. Update variables for Light variant */
+    --card-fg: var(--color-black);
+    --card-btn-bg: var(--color-zinc-100);
+    --card-btn-fg: var(--color-black);
+    
+    background-color: var(--color-white);
+    color: var(--card-fg);
+    border: 1px solid var(--color-zinc-200);
+  }
+}
 
-		/* Target the button inside the dark card */
-		& .card-button {
-			@apply bg-zinc-800 text-white;
-		}
-	}
-
-	/* Light Variant */
-	&.is-light {
-		background-color: var(--color-card-light);
-		color: var(--color-black);
-		border: 1px solid var(--color-zinc-200);
-	}
+@utility card-icon {
+  /* This ensures the SVGR uses the current card's foreground color */
+  color: var(--card-fg);
+  fill: currentColor;
 }
 
 @utility card-button {
-	@apply flex items-center gap-3 bg-white py-2 px-4 rounded-[1.5rem] text-sm font-medium;
+  @apply flex items-center gap-3 py-2 px-4 rounded-[1.5rem] transition-all;
+  background-color: var(--card-btn-bg);
+  color: var(--card-btn-fg);
 }

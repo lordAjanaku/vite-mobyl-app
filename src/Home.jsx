@@ -90,9 +90,8 @@ function CardList () {
 }
 
 function Card({ variant = "lime" }) {
-  // Map props to our CSS classes
   const variantClasses = {
-    lime: "", // default
+    lime: "",
     dark: "is-dark",
     light: "is-light"
   };
@@ -100,19 +99,21 @@ function Card({ variant = "lime" }) {
   return (
     <div className={`card ${variantClasses[variant]}`}>
       <div className="flex items-center justify-between">
-        <Logo className="w-10 h-10"/>
-        <MastercardLogo className="w-10"/>
+        {/* The 'card-icon' utility passes the --card-fg variable down */}
+        <Logo className="card-icon w-10 h-10"/>
+        <MastercardLogo className="card-icon w-10"/>
       </div>
 
       <div className="flex items-center justify-between">
         <div>
-          <p className="opacity-80 text-sm">Debit Card</p>
-          <p className="font-mono font-medium">**** 4548</p>
+          <p className="opacity-70 text-sm">Debit Card</p>
+          <p className="font-medium">**** 4548</p>
         </div>
         
+        {/* The button now automatically pulls its theme from the card variables */}
         <button className="card-button" type="button">
-          <Eye size={20} />
-          <span>Details</span>
+          <Eye size={24} />
+          <p>Details</p>
         </button>
       </div>
     </div>
