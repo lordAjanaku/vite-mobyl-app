@@ -50,7 +50,7 @@ body {
   @apply grid gap-16 p-4 rounded-[1.5rem] transition-colors;
   
   /* 1. Set the variable defaults (Lime variant) */
-  --card-fg: var(--color-black);
+  --card-fg: var(--color-red);
   --card-btn-bg: var(--color-white);
   --card-btn-fg: var(--color-black);
   
