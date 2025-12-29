@@ -69,7 +69,7 @@ body {
 
   &.is-light {
     /* 3. Update variables for Light variant */
-    --card-fg: var(--color-black);
+    --card-fg: var(--color-blue-500);
     --card-btn-bg: var(--color-zinc-100);
     --card-btn-fg: var(--color-black);
     
